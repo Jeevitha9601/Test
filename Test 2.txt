@@ -1,0 +1,151 @@
+1)exp the concept of method overloading?
+ans:method overloading is nothing but same method name but diffrent parameters.
+exp:class Animals{
+    static void tiger(String name){
+}
+static void tiger(String name,int age){
+}
+}
+
+
+2)4 kinds of variables defined in java
+a)sattic variable
+b)instance variable
+c)local varivable
+d)parameter variable
+
+example:class Cake{
+       static float price;//static variable
+        void disply(){
+        String type;//local variable
+        }
+       public static void main(String [] args){
+       int number;//instance variable
+        }
+
+parameter variable exmple:static void making(String ingridents){}
+
+3)Differnce between heap and stack memory
+    HEAP:heap memory is created by jvm during excecution.and it is used to store address or values of instance variables
+    Stack:Stack memory is used to excecute the methods.
+
+4)constructor over loading
+
+class Bricks{
+String type;
+int weight;
+Bricks(){
+System.out.println("invoking defalut constructor");
+}
+Bricks(String type){
+System.out.println("invoking String constructor");
+}
+Bricks(String type,int weight){
+System.out.println("invoking String and int constructor");
+}
+}
+class BricksRunner{
+public static void main(String[] args){
+Bricks bricks=new Bricks("mud",12);
+}
+}
+
+5)instance method overloading
+
+class Bike{
+void int getCcByName(String model){
+if(model!=null){
+if(model=="swift"){
+system.out.pringln("given model is suitable");
+return 4566;
+}
+}
+else{
+system.out.pringln("given model not is suitable")
+}
+
+void int getCcByName(String model,String owner){
+if(model!=null){
+if(model=="rangerover"){
+system.out.pringln("given model is suitable");
+return 4789;
+}
+}
+else{
+system.out.pringln("given model not is suitable")
+}
+
+if(model!=null){
+if(owner=="jeevitha"){
+system.out.pringln("given name is suitable");
+return 4779;
+}
+}
+else{
+system.out.pringln("given name not is suitable")
+}
+
+return 0;
+}
+class BikeRunner{
+public static void main(String[] args){
+int ref=Bike.getCcByName("swift");
+int ref1=Bike.getCcByName("rangerover");
+
+
+
+
+6)sattic variable and satic method
+
+
+class computor{
+static String brand;
+static float price;
+static{
+System.out.println("invoking static block");
+brand="HP";
+price=56678;
+}
+
+static void printstatic(String brand, float price){
+System.out.println("invoking static method");
+}
+}
+classComputorRunner{
+public satic void main(String[] args){
+
+Computer.printstatic("dell",68865);
+}
+}
+
+
+
+7)costructror chanining
+
+class Bag{
+String barand;
+float price;
+Bag(){
+}
+Bag(String barand){
+this.brand=brand;
+}
+Bag(String barand,float price){
+this.brand=brand;
+this.price=price;
+}
+public static void main(String[] args){
+Bag bag=new Bag("globus",560);
+System.out.println("Brand of the bag is"+bag.brand);
+System.out.println("price of the bag is"+bag.price);
+}
+}
+
+
+
+
+
+
+
+
+
